@@ -66,13 +66,13 @@ function recalculate() {
 // INSERT YOUR CODE HERE
 
 function changeModel() {
-    const model_name = MODELNAME_SPANELEMENT.innerText
+    const model_name = MODELNAME_SPANELEMENT.innerText;
    
     if (model_name === "Model CPRG") {
-        MODELNAME_SPANELEMENT.innerText = "Model XYZ" } 
+        MODELNAME_SPANELEMENT.innerText = "Model XYZ"; } 
     else {
-        MODELNAME_SPANELEMENT.innerText = "Model CPRG"}
-     recalculate()
+        MODELNAME_SPANELEMENT.innerText = "Model CPRG"; }
+     recalculate();
 }
 
 /****************** duration button logic ******************/
@@ -91,12 +91,12 @@ function changeModel() {
 function changeDuration() {
     let newDuration = prompt("Please enter the duration");
 
-    if (newDuration == "") { newDuration = "0" };
-    DURATION_SPANELEMENT.innerText = newDuration
-    recalculate()}
+    if (newDuration == "") { newDuration = "0" }
+    DURATION_SPANELEMENT.innerText = newDuration;
+    recalculate()};
 
-SWITCHMODEL_BUTTONELEMENT.addEventListener('click', changeModel)
-CHANGEDURATION_SPANELEMENT.addEventListener('click', changeDuration)
+SWITCHMODEL_BUTTONELEMENT.addEventListener('click', changeModel);
+CHANGEDURATION_SPANELEMENT.addEventListener('click', changeDuration);
 
 
 
