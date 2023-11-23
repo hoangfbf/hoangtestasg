@@ -38,7 +38,7 @@ function recalculate() {
     let total_cost = 0;
     let duration = parseInt(DURATION_SPANELEMENT.innerText);
    
-    if (isNaN(duration)) { duration = 0 };    // if user don't enter input, set duration to 0
+    if (isNaN(duration)) { duration = 0; }    // if user don't enter input, set duration to 0
     if (model_Name === "Model XYZ") {
         total_cost = duration * 100;} 
     else if (model_Name === "Model CPRG") {
@@ -91,9 +91,9 @@ function changeModel() {
 function changeDuration() {
     let newDuration = prompt("Please enter the duration");
 
-    if (newDuration == "") { newDuration = "0" }
+    if (newDuration == "") { newDuration = "0"; }
     DURATION_SPANELEMENT.innerText = newDuration;
-    recalculate()};
+    recalculate();}
 
 SWITCHMODEL_BUTTONELEMENT.addEventListener('click', changeModel);
 CHANGEDURATION_SPANELEMENT.addEventListener('click', changeDuration);
